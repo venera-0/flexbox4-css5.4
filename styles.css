@@ -17,8 +17,9 @@
   .header {
     background-color: #eef4ff;
     padding: 20px 0;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+
   }
+  
   
   .header nav {
     display: flex;
@@ -27,8 +28,9 @@
     list-style: none;
   }
   
+  
   .header a {
-    text-decoration: none;
+   text-decoration: none;
     font-size: 16px;
     font-weight: bold;
   }
@@ -36,40 +38,43 @@
   
   /* Link Colors */
   .link-buy {
-    color: #4a90e2; /* Blue */
+    color: #40D;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+
+ 
   }
-  
+
+  .link-commercial,
+  .link-sale,
   .link-rent {
-    color: #e94e77; /* Pink */
+    color: #5E6577;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+
   }
   
-  .link-commercial {
-    color: #34a853; /* Green */
-  }
-  
-  .link-sale {
-    color: #fbbc05; /* Yellow */
-  }
   
   .header a:hover {
     text-decoration: underline;
-    opacity: 0.8;
+  
   }
+
   
   /* Search Bar */
   .search-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 30px 0;
-    background-color: #eef4ff;
-    padding: 20px;
-    border-radius: 10px;
+    gap: 20px;
+    
   }
   
   .search-options {
     display: flex;
-    gap: 20px;
+    gap: 15px;
   }
   
   .search-item {
@@ -91,7 +96,7 @@
     border: none;
     padding: 10px 20px;
     border-radius: 8px;
-    cursor: pointer;
+   
   }
   
   .search-btn img {
@@ -100,7 +105,7 @@
   }
   
   /* Hero Section */
-  .hero {
+  .Find {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -108,13 +113,13 @@
     margin: 40px 0;
   }
   
-  .hero-img {
+  .Find-img {
     width: 400px;
     border-radius: 10px;
     object-fit: cover;
   }
   
-  .hero-text {
+  .Find-text {
     font-size: 18px;
     color: #606060;
     max-width: 400px;
@@ -126,7 +131,7 @@
     padding: 20px;
     background-color: #ffffff;
     border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+   
   }
   
   .section-title {
@@ -151,7 +156,7 @@
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+   
   }
   
   .property-name {
