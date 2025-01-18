@@ -3,169 +3,261 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  body {
+}
+
+body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #f9f9fc;
     color: #333;
     margin: 20px;
-  }
-  
-  /* Header Section */
-  .header {
-    background-color: #eef4ff;
-    padding: 20px 0;
+}
 
-  }
-  
-  
-  .header nav {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
+/* Header Section */
+.header {
+    background: #F1EBFF;
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.header nav {
+    display: inline-block; /* Central alignment */
+}
+
+.header nav li {
+    display: inline;
+    margin: 0 15px;
     list-style: none;
-  }
-  
-  
-  .header a {
-   text-decoration: none;
+}
+
+.header a {
+    text-decoration: none;
     font-size: 16px;
     font-weight: bold;
-  }
-  
-  
-  /* Link Colors */
-  .link-buy {
-    color: #40D;
-    font-family: Inter;
-    font-size: 16px;
-    font-style: normal;
+}
 
- 
-  }
+.link-buy {
+    color: #155EEF; /* Unique color for "Buy" link */
+}
 
-  .link-commercial,
-  .link-sale,
-  .link-rent {
+.link-commercial,
+.link-sale,
+.link-rent {
     color: #5E6577;
-    font-family: Inter;
-    font-size: 16px;
-    font-style: normal;
+}
 
-  }
-  
-  
-  .header a:hover {
-    text-decoration: underline;
-  
-  }
+.header a:hover {
+    text-decoration: underline; /* Add a hover effect */
+}
 
-  
-  /* Search Bar */
-  .search-bar {
+/* Search Bar */
+.search-bar {
     display: flex;
+    align-items: center;
     justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-    
-  }
-  
-  .search-options {
+    padding: 10px 0;
+}
+
+.search-options {
     display: flex;
-    gap: 15px;
-  }
-  
-  .search-item {
+    gap: 20px; /* Adjusted for spacing */
+    margin-left: 25px;
+}
+
+.search-item {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 16px; /* Space between image and text */
     padding: 10px 20px;
-    background-color: #d7e7ff;
-    border-radius: 8px;
-  }
-  
-  .search-item img {
+    background: #F1EBFF;
+    border-radius: 16px;
+}
+
+.search-item img {
     width: 20px;
     height: 20px;
-  }
-  
-  .search-btn {
-    background-color: #4a90e2;
+}
+
+.search-btn {
+    background-color: #155EEF;
     border: none;
     padding: 10px 20px;
     border-radius: 8px;
-   
-  }
-  
-  .search-btn img {
+    color: white;
+}
+
+.search-btn img {
     width: 20px;
     height: 20px;
-  }
-  
-  /* Hero Section */
-  .Find {
+}
+
+.search-btn:hover {
+    background-color: #357ABD; /* Darker shade for hover */
+    cursor: pointer;
+}
+
+.search-btn:focus {
+    outline: 2px solid #155EEF;
+}
+
+/* Hero Section */
+.Find {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    gap: 30px;
-    margin: 40px 0;
-  }
-  
-  .Find-img {
-    width: 400px;
-    border-radius: 10px;
-    object-fit: cover;
-  }
-  
-  .Find-text {
-    font-size: 18px;
-    color: #606060;
-    max-width: 400px;
-    text-align: center;
-  }
-  
-  /* Property Listings */
-  .properties {
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 10px;
-   
-  }
-  
-  .section-title {
-    font-size: 20px;
-    color: #333;
-    text-align: center;
-    margin-bottom: 10px;
-  }
-  
-  .price-note {
-    font-size: 14px;
-    color: #555;
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  
-  .property-card {
+    text-align: right;
+    font-family: Inter, sans-serif; /* Fixed missing fallback */
+}
+
+.Find-img {
+    width: 100%;
+    height: 422px;
+    flex-shrink: 0;
+}
+
+.Find-text {
+    color: #5E6577;
+    text-align: right;
+    font-size: 32px;
+    font-style: normal;
+}
+
+/* Property Listings */
+.Display {
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     gap: 10px;
-    background-color: #eef4ff;
+    flex-shrink: 1;
+    border-bottom: 1px solid #CCD3E0;
+    margin-bottom: 20px;
+}
+
+
+.section-title {
+    color: #155EEF;
+    font-size: 16px;
+    font-style: normal;
+    display: flex;
+}
+
+
+
+.price-note {
+    color: #5E6577;
+    font-size: 16px;
+}
+
+
+
+/* General Container Styling */
+.property-card-1,
+.property-card-2,
+.property-card-3 {
+    display: flex;
+    align-items: center; /* Center elements vertically */
+    gap: 20px;
+    font-family: Inter, sans-serif;
+    background-color: #ffffff;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 10px;
-   
-  }
-  
-  .property-name {
-    font-size: 18px;
-    color: #333;
-  }
-  
-  .property-desc {
+    width: 100%;
+}
+
+
+
+/* First Container - Title Left, Description Right */
+.property-card-1 {
+    border-top: 4px solid #8CE900;
+    border-left: 4px solid black;
+    border-right: 4px solid #155EEF;
+    border-bottom: 4px solid #DD2590;
+    justify-content: space-between;
+}
+
+
+
+.property-card-1 .property-name-1 {
+    text-align: left;
+    font-size: 24px;
+    color: #5E6577;
+    flex: 1; /* Occupies left space */
+}
+
+
+
+.property-card-1 .property-description-1 {
+    text-align: right;
     font-size: 14px;
-    color: #606060;
-  }
-  
+    color: #969696;
+    flex: 2; /* Wider space for description */
+}
+
+
+
+.property-card-2 {
+    border: 1px solid #40D;
+    background: #EDE6FC;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.property-card-2 .property-name-2 {
+    text-align: right;
+    font-size: 24px;
+    color: #3B3B3B;
+    margin-bottom: 0; 
+    flex: 1;
+}
+
+.property-card-2 .property-description-2 {
+    text-align: left;
+    font-size: 14px;
+    color: #3B3B3B;
+    flex: 2;
+}
+
+
+/* Third Container - Description Left, Title Right */
+.property-card-3 {
+    border: 1px solid #004FE3;
+    display: flex;
+    justify-content: space-between; /* Space between title and description */
+    align-items: center;
+}
+
+.property-card-3 .property-name-3 {
+    text-align: left; /* Align title on the right-hand side */
+    font-size: 24px;
+    color: #07081A;
+    flex: 1;
+}
+
+.property-card-3 .property-description-3 {
+    text-align: right; /* Align description on the left-hand side */
+    font-size: 14px;
+    color: #155EEF;
+    flex: 2;
+}
+
+
+.Property-social-icons{
+    display: flex;
+    width: 1440px;
+    padding: 40px 200px 0px 928px;
+    justify-content: flex-end;
+    align-items: center;
+
+
+}
+
+
+.social-icons{
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-3xl, 24px);
+    align-items: center;
+
+}
